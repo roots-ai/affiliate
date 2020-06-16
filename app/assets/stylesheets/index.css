@@ -40,7 +40,7 @@
 }
 .contain{
 	padding: 50px;
-	background: url("assets/img/bg2.jpg");
+	background: url("bg2.jpg");
 }
 
 @media (max-width: 767px) {
@@ -90,7 +90,7 @@
 
 }
   
-  .owl-carousel .owl-nav button.owl-prev {
+ .owl-carousel .owl-nav button.owl-prev {
     background: none;
     padding: 5px !important;
     font-size: 60px;
