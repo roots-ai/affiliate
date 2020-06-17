@@ -1,0 +1,132 @@
+.earning-container {
+    position: absolute;
+    width: calc(100% - 330px);
+    box-shadow: 0 15px 32px 0 rgba(0, 0, 0, 0.1);
+    left: 10%;
+    padding: 40px;
+    bottom: 8px;
+    background: white
+}
+
+.earning-container .custom-card{
+	text-align: center;
+}
+
+.earning-container .custom-card h3 {
+    opacity: 0.8;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+}
+.inner-container{
+	    margin-top: 32px;
+}
+
+.input-box{
+	flex: 1 0 47%;
+    margin: 3px 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 350px;
+    padding: 10px;
+    border: 0.9px solid;
+    opacity: 0.7;
+    border-color: rgba(0,0,0,0.4);
+
+}
+.upper-container{
+	text-align: center;
+	
+}
+.lower-container{
+	text-align: center;
+}
+
+.earning-amount h6 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h4{
+	text-align: center;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.left-bubble {
+    width: 27px;
+    height: 27px;
+    opacity: 0.24;
+    background-color: #ff0002;
+    top: 60px;
+    left: -14px;
+    z-index: -1;
+}
+
+.right-bubble {
+    width: 90px;
+    height: 90px;
+    opacity: 0.6;
+    background-color: #ef4023;
+    right: -32px;
+    bottom: -26px;
+    z-index: -1;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .earning-container {
+    width: calc(100% - 36px);
+    
+    height: 550px;
+    
+    position: relative;
+    }
+
+    .upper-container{
+	
+}
+
+.earning-container .custom-card{
+	
+}
+
+.earning-container .custom-card h3 {
+	font-size: 18px;
+	text-align: left;
+    
+}
+
+.input-box{
+
+	margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    height: 40px;
+    font-size: 14px;
+    display: block;
+    font-weight: 500;
+	
+}
+
+h6{
+font-size: 18px !important;
+}
+
+h4{
+	font-size: 1.5rem;
+}
+
+.right-bubble {
+    width: 75px;
+    height: 75px;
+    right: -21px;
+}
+}
