@@ -1,46 +1,251 @@
-<section id="get-started"><div class="get-started-container"><div><h3>Get started</h3><p>Join the ROOTS Circle to drive more value from your audience.</p></div><div class="btn-container"><button type="button" class="custom-btn get-started-btn contact-home-btn secondary-btn">Contact Us</button><button type="button" primary="true" class="custom-btn get-started-btn apply-now-btn primary-btn">Sign Up</button></div></div></section>
+  <section id="get-started"><div class="get-started-container"><div><h3>Get started</h3><p>Join the ROOTS Circle to drive more value from your audience.</p></div><div class="btn-container"><button type="button" class="custom-btn get-started-btn contact-home-btn secondary-btn">Contact Us</button><button type="button" primary="true" class="custom-btn get-started-btn apply-now-btn primary-btn">Sign Up</button></div></div></section>
 
 
-<footer class="appfooter">
-	<div class="footerContainer">
-		<div class="footerlogo">
-			<img style="width: 90px;"src="assets/roots.png" alt="" class="logo-footer"><h3>World's fastest growing travel chain.</h3>
-		</div>
-        <div class="footerContainer2">
-        	<div class="inner1">
-        		<div class="footerlinkslist1">
-        			<a class="footer-links" target="_blank" href="https://oyorooms.com/officialoyoblog/">Official OYO Blog</a>
-        			<a class="footer-links">FAQ</a>
-        			<a class="footer-links">Contact Us</a>
-        		</div>
-        		<div class="footerlinkslist1">
-        			<a class="footer-links">Terms of Use</a>
-        			<a class="footer-links">Privacy Policy</a>
-        		</div>
-        	</div>
-        	<div class="inner2">
-        		<p class="downloadtext">Download ROOTS app for exciting offers<a class="footer-links underline-links" target="_blank" href="">Learn more</a></p>
-        		<div class="playStore">
-        			<div class="playstorelinks"><a target="_blank" href=""><img src="assets/group-5.svg" alt=""></a></div>
-        		
-        		<div class="playstorelinks"><a target="_blank" href=""><img src="assets/group-7 (2).svg" alt=""></a></div>
-        		</div>
-        		<p class="footer-link-text">Feeling lucky? Try out a random ROOTS.<a class="footer-links underline-links" target="_blank" href="https://www.oyorooms.com/?utm_source=Social_O_web&amp;utm_medium=1&amp;utm_content=oyocirclewebfooter">Find ROOTS</a></p>
-        	</div>
-        </div>
-        <div class="footerContainer3">
-        <div class="img-container">
-        	<div><a target="_blank" href=""><img src="assets/facebook.svg" alt=""></a></div>
-        	<div><a target="_blank" href=""><img src="assets/twitter.svg" alt=""></a></div>
-        	<div><a target="_blank" href=""><img src="assets/youtube.svg" alt=""></a></div>
-        	<div><a target="_blank" href=""><img src="assets/pinterest.svg" alt=""></a></div>
-         </div>
-         <div class="copyright-text"><span>2018-2019 © Oravel Stays Private Limited</span></div>
-        </div>
+  <footer class="appfooter">
+  	<div class="footerContainer">
+  		<div class="footerlogo">
+  			<img style="width: 90px;"src="assets/roots.png" alt="" class="logo-footer"><h3>World's fastest growing travel chain.</h3>
+  		</div>
+          <div class="footerContainer2">
+          	<div class="inner1">
+          		<div class="footerlinkslist1">
+          			<a class="footer-links" target="_blank" href="https://oyorooms.com/officialoyoblog/">Official OYO Blog</a>
+          			<a class="footer-links">FAQ</a>
+          			<a class="footer-links">Contact Us</a>
+          		</div>
+          		<div class="footerlinkslist1">
+          			<a class="footer-links">Terms of Use</a>
+          			<a class="footer-links">Privacy Policy</a>
+          		</div>
+          	</div>
+          	<div class="inner2">
+          		<p class="downloadtext">Download ROOTS app for exciting offers<a class="footer-links underline-links" target="_blank" href="">Learn more</a></p>
+          		<div class="playStore">
+          			<div class="playstorelinks"><a target="_blank" href=""><img src="assets/group-5.svg" alt=""></a></div>
+          		
+          		<div class="playstorelinks"><a target="_blank" href=""><img src="assets/group-7 (2).svg" alt=""></a></div>
+          		</div>
+          		<p class="footer-link-text">Feeling lucky? Try out a random ROOTS.<a class="footer-links underline-links" target="_blank" href="https://www.oyorooms.com/?utm_source=Social_O_web&amp;utm_medium=1&amp;utm_content=oyocirclewebfooter">Find ROOTS</a></p>
+          	</div>
+          </div>
+          <div class="footerContainer3">
+          <div class="img-container">
+          	<div><a target="_blank" href=""><img src="assets/facebook.svg" alt=""></a></div>
+          	<div><a target="_blank" href=""><img src="assets/twitter.svg" alt=""></a></div>
+          	<div><a target="_blank" href=""><img src="assets/youtube.svg" alt=""></a></div>
+          	<div><a target="_blank" href=""><img src="assets/pinterest.svg" alt=""></a></div>
+           </div>
+           <div class="copyright-text"><span>2018-2019 © Oravel Stays Private Limited</span></div>
+          </div>
 
-	</div>
-	
+  	</div>
+  	
 
 
 
-</footer>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+
+  <script type="text/javascript">
+      
+
+
+      $(document).ready(function(e){
+
+          var arrslab=new Array();
+          arrslab.push(79,249,399,159,299,499);
+
+          
+
+          $("input").change(function function_name(argument) {
+             var arrText= new Array();
+             var commarr=new Array();
+             var earn=0;
+             $('input[type=text]').each(function(){
+              var value=$(this).val()
+              if (value==""){
+                  value=0;
+              }
+             arrText.push(parseInt(value));
+              })
+
+
+             var i;
+             var comm;
+             for (i=0;i<arrText.length;i++){
+              sales=arrText[i];
+              if (sales>=1 && sales <=10){
+                  com=0.1;
+              }
+              else if(sales>=11 && sales <=25){
+                  com=0.15;
+              }
+              else if(sales>=26 && sales <=50){
+                  com=0.2;
+              }
+              else if(sales>=51 && sales <=100){
+                  com=0.25;
+              }
+              else if(sales==0){
+                  com=0;
+              }
+              else{
+                  com=0.3;
+                  }
+              commarr.push(com)
+              }
+              
+
+              for (i=0;i<6;i++){
+                  earn=earn+(arrText[i]*arrslab[i]*commarr[i])
+
+              }
+              earn=earn.toFixed(2)
+
+             $(".kirti").html(earn)
+             
+          });
+
+
+          
+      });
+
+
+  </script>
+
+
+  </body>
+  </html>
+
+
+   
+  <script>
+  $(document).ready(function(){
+  $('.counter-count').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          duration: 1000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+  });
+  });
+
+
+
+
+  </script>
+
+    <script src="assets/owl.carousel.min.js"></script>
+      <script>
+          $(document).ready(function(){
+
+      $('#one').owlCarousel({
+      loop:true,
+      margin:20,
+      nav:true,
+      dots: true,
+      items:3,
+      responsive : {
+      // breakpoint from 0 up
+      0 : {
+        items:1,
+      },
+      403 : {
+        items:1,
+      },
+      // breakpoint from 480 up
+      480 : {
+        items:2,
+      },
+      // breakpoint from 768 up
+      768 : {
+        items:2,
+      },
+      // breakpoint from 768 up
+      990 : {
+        items:3,
+      }
+
+  }   
+  });
+      $('#two').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots: true,
+      items:4,
+      responsive : {
+      // breakpoint from 0 up
+      0 : {
+        items:1,
+      },
+      403 : {
+        items:1,
+      },
+      // breakpoint from 480 up
+      480 : {
+        items:1,
+      },
+      // breakpoint from 768 up
+      768 : {
+        items:1,
+      },
+      // breakpoint from 768 up
+      990 : {
+        items:3,
+      }
+
+  }   
+  });
+
+      $('#three').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots: true,
+      items:3,
+      responsive : {
+      // breakpoint from 0 up
+      0 : {
+        items:1,
+      },
+      403 : {
+        items:1,
+      },
+      // breakpoint from 480 up
+      480 : {
+        items:1,
+      },
+      // breakpoint from 768 up
+      768 : {
+        items:2,
+      },
+      // breakpoint from 768 up
+      990 : {
+        items:2,
+      }
+
+  }   
+  });
+    });
+
+    </script>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/easing.min.js"></script>
+    <script src="assets/hoverIntent.js"></script>
+    <script src="assets/superfish.min.js"></script>
+    <script src="assets/wow.min.js"></script>
+    <script src="assets/magnific-popup.min.js"></script>
+    <script src="assets/sticky.js"></script>
+
+
+    <!-- Template Main Javascript File -->
+    <script src="assets/main.js"></script>

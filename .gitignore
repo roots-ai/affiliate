@@ -13,32 +13,15 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+/tmp/*
 !/log/.keep
-/tmp
+!/tmp/.keep
+
+/node_modules
+/yarn-error.log
 
 .byebug_history
-app/.DS_Store
-bin/*
-Gemfile.lock
-roots-erd.pdf
-app/helpers/.DS_Store
-*.png
-**/__pycache__/*
-vendor/cache/*
-passenger.3000.pid
-etc-apt-sources.list
-hashtags0
-hashtags1
-hashtags
-public/hashtags/*
-*.super_categories
-*.out
-temp/*
-testing/*
-friends.avi
-friends/*
-*.csv
-app/images/
 .DS_Store
-Gemfile.lock
-/bin/*
+public/assets/*
+config/secrets.yml
+app/assets/images/cities/*
