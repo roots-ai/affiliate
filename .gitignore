@@ -40,3 +40,5 @@ friends/*
 *.csv
 app/images/
 .DS_Store
+Gemfile.lock
+/bin/*
