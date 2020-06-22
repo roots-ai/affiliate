@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200618053637) do
+ActiveRecord::Schema.define(version: 20200620101903) do
 
   create_table "partners", force: :cascade do |t|
     t.string "username"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20200618053637) do
     t.string "country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "email_confirmed", default: false
+    t.string "confirm_token"
   end
 
 end

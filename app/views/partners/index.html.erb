@@ -1,42 +1,88 @@
+<%= render "shared/header" %>
 
-<%= form_for :post, url:partners_path do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <br>
-  <br>
-  <%= f.label :first_Name %>
-  <%= f.text_field :first_Name %>
-  <br>
-  <br>
-  <%= f.label :last_Name %>
-  <%= f.text_field :last_Name %>
-  <br>
-  <br>
-  <%= f.label :Email %>
-  <%= f.text_field :Email %>
-  <br>
-  <br>
-  <%= f.label :password %>
-  <%= f.text_field :password %>
-  <br>
-  <br>
-  <%= f.label :password_confirmation %>
-  <%= f.text_field :password_confirmation %>
-  <br>
-  <br>
-  <%= f.label :phone %>
-  <%= f.text_field :phone %>
-  <br>
-  <br>
-<%= f.label :country %>
-  <%= f.text_field :country %>
-  <br>
-  <br>
-
-
-
-
-
-
-  <%= f.submit "Submit" %>
+<% flash.each do |type, msg| %>
+  <div class="myflash alert alert-<%= type %>">
+    <%= msg %>
+  </div>
 <% end %>
+
+<div class="invite-container">
+    <div class="invite-wrapper">
+        <div class=inner-container>
+            <h3 class="banner-heading invite-head-top">Be a part of the Circle</h3>
+            <p class="banner-subheading">We need a few basic details to consider your profile. </p>
+            <div class="personal-details-container">
+                <div>
+
+                    <%= form_for :partner, url:partners_path,html: {class: "register-form ui form"} do |f| %>
+
+                
+                    <div class="input-container">
+                        <%= f.label :username %>
+                        <div class="ui input input-field">
+                            <%= f.text_field :username ,placeholder: "Username",required: true%>
+                            
+                            <p class='error'><%= show_errors(@partner, :username) %></p>
+
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <%= f.label :first_Name %>
+                        <div class="ui input input-field">
+                            <%= f.text_field :first_Name ,placeholder: "First Name",required: true %>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <%= f.label :last_Name %>
+                        <div class="ui input input-field">
+                            <%= f.text_field :last_Name ,placeholder: "Last Name",required: true %>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <%= f.label :Email %>
+                        <div class="ui input input-field">
+                            <%= f.email_field :Email ,placeholder: "Email-Id",required: true %>
+                             <p class='error'><%= show_errors(@partner, :Email) %></p>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <%= f.label :password %>
+                        <div class="ui input input-field">
+                            <%= f.password_field :password ,placeholder: "Password" ,required: true%>
+                             <p class='error'><%= show_errors(@partner, :password) %></p>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <%= f.label :password_confirmation  %>
+                        <div class="ui input input-field">
+                            <%= f.password_field :password_confirmation ,placeholder: "Confirm Password" ,required: true%>
+                             <p class='error'><%= show_errors(@partner, :password_confirmation) %></p>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <%= f.label :phone %>
+                        <div class="ui input input-field">
+                            <%= f.text_field :phone ,placeholder: "Phone",required: true %>
+                             <p class='error'><%= show_errors(@partner, :phone) %></p>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <%= f.label :country%>
+                        <div class="ui input input-field">
+                            <%= f.text_field :country ,placeholder: "Country",required: true  %>
+                        </div>
+                    </div>
+                   
+
+                    <%= f.submit "Submit" ,class: 'my-button btn btn-default' %>
+                    <% end %>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
