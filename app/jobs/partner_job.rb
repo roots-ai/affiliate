@@ -5,7 +5,4 @@ class PartnerJob < ApplicationJob
 		PartnerMailer.registration_confirmation(partner).deliver
 	end
 
-	
-
-
 end

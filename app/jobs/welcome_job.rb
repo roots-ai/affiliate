@@ -4,6 +4,4 @@ class WelcomeJob < ApplicationJob
 	def perform(partner)
 		WelcomeMailer.success_confirmation(partner).deliver
 	end
-
-
 end
