@@ -187,14 +187,17 @@
     {
 	   display: flex;
 	   width: 100%;
+       margin-top:10%;
 
     }
     .item
     {
+        margin-top: 10%;
       height: 250px;
       background-color:white;
       margin: 10px;
       width: 100%;
+      font-family: 'Lato';
     }
     .counter-count
     {
