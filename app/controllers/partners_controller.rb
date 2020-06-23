@@ -19,7 +19,7 @@ class PartnersController < ApplicationController
         @partner=Partner.new(partner_params)
         if @partner.valid?
             @partner.save
-            PartnerMailer.registration_confirmation(@partner).deliver
+             PartnerJob.perform_now(@partner)
             flash[:success] = "Signup Successful!Please confirm your email address to continue"
             render "index"
         else
@@ -33,7 +33,7 @@ class PartnersController < ApplicationController
             partner.email_activate
             flash[:success] = "Welcome to the Sample App! Your email has been confirmed.
             Please sign in to continue."
-            WelcomeMailer.success_confirmation(partner).deliver
+            WelcomeJob.perform_now(partner)
             redirect_to '/partners'
         else
             flash[:error] = "Sorry. User does not exist"
