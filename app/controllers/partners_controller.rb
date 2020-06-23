@@ -4,7 +4,6 @@ class PartnersController < ApplicationController
         @partner=Partner.new
     end
 
-
     def new
         @partner=Partner.new
     end

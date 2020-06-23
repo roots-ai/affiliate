@@ -4,14 +4,14 @@
 				<div class="bannertext" style="margin-top: 15%;">
 					<h5 class="mytext"><%= title %></h5>
 					<p class="textsubheading"><%= description %></p>
-					<button type="button" primary="true" class="custom-btn banner-btn primary-btn">Sign Up</button>
+					<button type="button" primary="true" class="custom-btn banner-btn primary-btn" style="background-color: #1ab64f;text-decoration-color: #fff;"><%= link_to "Sign Up", partners_path(@partner) %></button>
 				</div>
 			</div>
 			<div class="innerbanner2" style="margin-top: 1%;">
 				<img class="img-mobile" src="<%= banner_img %>" alt="" style="margin-top: 0;width: 100%;">
 			</div>
 		</div>
-		<div class="banner-apply-now-wrapper" id="butn" style="margin-bottom: 7%;"><button type="button" class="custom-btn banner-btn-mobile secondary-btn">Sign Up</button></div>
+		<div class="banner-apply-now-wrapper" id="butn" style="margin-bottom: 7%;"><button type="button" class="custom-btn banner-btn-mobile secondary-btn"><%= link_to "Sign Up", partners_path(@partner) %></button></div>
 
 
 		<div class="earning-container" style="width: 90%;left: 5%;">

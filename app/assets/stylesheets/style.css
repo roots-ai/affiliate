@@ -137,7 +137,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato";
   font-weight: 700;
 }
 
@@ -209,7 +209,7 @@ h6 {
 
 #intro .intro-content .btn-get-started,
 #intro .intro-content .btn-projects {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato";
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -344,7 +344,7 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: #555;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato";
   font-weight: 700;
   font-size: 14px;
   outline: none;
@@ -551,7 +551,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #0c2e8a;
   font-weight: 700;
   font-size: 36px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato";
 }
 
 #about .content h3 {
@@ -832,7 +832,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;

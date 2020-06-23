@@ -17,3 +17,8 @@ build_sales_img1: /assets/sales.png
 build_sales_img2: /assets/strategy.png
 build_sales_img3: /assets/ideate.png
 build_sales_img4: /assets/project.png
+title_kindof_students: We're looking for Students.
+students_type1:
+students_type2:
+students_type3:
+students_type4:
