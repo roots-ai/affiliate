@@ -26,6 +26,7 @@ a:focus {
   color: #51d8af;
   outline: none;
   text-decoration: none;
+  background-color: #fff;
 }
 
 p {
