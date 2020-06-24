@@ -30,14 +30,14 @@
 
 #get-started .get-started-container h3 {
     /* mix-blend-mode: screen; */
-    font-family: "OpenSansBold";
+    font-family: "Lato";
     font-size: 32px;
     color: #222222;
     font-weight: lighter;
 }
 
 #get-started .get-started-container p {
-    font-family: "OpenSans";
+    font-family: "Lato";
     font-size: 16px;
     line-height: 1.5;
     color: #222222;

@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
     padding-bottom: 202px;
-    padding-left: 165px;
+    padding-left: 100px;
 }
 
 #myBanner .bannerContainer {
@@ -26,9 +26,9 @@
 }
 
 .mytext {
-    font-size: 40px;
+    font-size: 27px;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Lato';
     font-weight: 700
 }
 
@@ -36,9 +36,10 @@
     width: 570px;
     margin-top: 20px;
     opacity: 0.7;
+    font-family: 'Lato';
     line-height: 1.5;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .banner-btn {
@@ -49,7 +50,7 @@
 }
 
 .custom-btn {
-    font-family: "OpenSansSemiBold";
+    font-family:"Lato";
     border-radius: 28px;
     font-weight: 500;
     font-size: 14px;
@@ -64,8 +65,9 @@
 }
 
 
-.innerbanner2 img {
+.innerbanner2 {
     width: 100%;
+    margin-right: 5%;
 }
 
 .banner-apply-now-wrapper {
@@ -146,9 +148,12 @@
         .bannertext {
             margin: 0;
         }
-
+        .innerbanner{
+            margin-bottom: 0;
+            bottom: 0;
+        }
         .innerbanner2 {
-            margin-top: -50px;
+            top: 0;
             width: 100%;
         }
 
@@ -165,11 +170,13 @@
         }
 
         .textsubheading {
-            width: 312px;
-            font-size: 14px;
+            font-size: 18px;
         }
         .banner-btn {
             display: none;
+        }
+        #butn{
+            margin-bottom: 0;
         }
     }
 

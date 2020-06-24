@@ -1,45 +1,44 @@
-<section id="myBanner">
-	<div class="bannerContainer">
-		<div class="innerbanner">
-			<div class="bannertext">
-				<h3 class="mytext">Join. Promote. Earn.</h3>
-				<p class="textsubheading">Generate revenue from your audience by promoting ROOTS. Be a part of ROOTS Circle, an invite-only, global community of social media influencers and affiliate networks.</p>
-				<button type="button" primary="true" class="custom-btn banner-btn primary-btn">Sign Up</button>
+	<section id="myBanner" style="background-color: #fff;">
+		<div class="bannerContainer">
+			<div class="innerbanner">
+				<div class="bannertext" style="margin-top: 15%;">
+					<h5 class="mytext"><%= title %></h5>
+					<p class="textsubheading"><%= description %></p>
+					<button type="button" primary="true" class="custom-btn banner-btn primary-btn" style="background-color: #1ab64f;text-decoration-color: #fff;"><%= link_to "Sign Up", partners_path(@partner) %></button>
+				</div>
+			</div>
+			<div class="innerbanner2" style="margin-top: 1%;">
+				<img class="img-mobile" src="<%= banner_img %>" alt="" style="margin-top: 0;width: 100%;">
 			</div>
 		</div>
-		<div class="innerbanner2" style="margin-top: 10%;">
-			<img class=" img-mobile" src="https://prod-cap-socialoweb.s3-ap-southeast-1.amazonaws.com/images/banner-new.svg" alt="">
-		</div>
-	</div>
-	<div class="banner-apply-now-wrapper"><button type="button" class="custom-btn banner-btn-mobile secondary-btn">Sign Up</button></div>
+		<div class="banner-apply-now-wrapper" id="butn" style="margin-bottom: 7%;"><button type="button" class="custom-btn banner-btn-mobile secondary-btn"><%= link_to "Sign Up", partners_path(@partner) %></button></div>
 
 
-	<div class="earning-container" style="width: 90%;left: 5%;">
-		<div class="bubble left-bubble"></div>
+		<div class="earning-container" style="width: 90%;left: 5%;">
+			<div class="bubble left-bubble"></div>
 
-		<div class="custom-card"><h3>How much did you earn?</h3></div>
-		<div class="inner-container">
-			<div class="upper-container">
-		<input class="input-box" name="79rs" placeholder="No. of sales for 79 Rs" type="text">
-		<input class="input-box" name="bookingCount" placeholder="No. of sales for 249 Rs" type="text">
-		<input class="input-box" name="bookingCount" placeholder="No. of sales for 399 Rs" type="text">
-			</div>
-			<div class="lower-container">
-		<input class="input-box" name="bookingCount" placeholder="No. of sales for 159 Rs" type="text">
-		<input class="input-box" name="bookingCount" placeholder="No. of sales for 299 Rs" type="text">
-		<input class="input-box" name="bookingCount" placeholder="No. of sales for 499 Rs" type="text">	
+			<div class="custom-card"><h3>How much did you earn?</h3></div>
+			<div class="inner-container">
+				<div class="upper-container">
+			<input class="input-box" name="79rs" placeholder="No. of sales for 79 Rs" type="text">
+			<input class="input-box" name="bookingCount" placeholder="No. of sales for 249 Rs" type="text">
+			<input class="input-box" name="bookingCount" placeholder="No. of sales for 399 Rs" type="text">
+				</div>
+				<div class="lower-container">
+			<input class="input-box" name="bookingCount" placeholder="No. of sales for 159 Rs" type="text">
+			<input class="input-box" name="bookingCount" placeholder="No. of sales for 299 Rs" type="text">
+			<input class="input-box" name="bookingCount" placeholder="No. of sales for 499 Rs" type="text">	
 
-			</div>
-		
-		
-		</div>
-		<hr>
-
-		<div class="earning-amount"><h6>Earnings Amount</h6><h4 class="kirti"style="color: rgba(0, 0, 0, 0.4); margin: 0 "></h4>
+				</div>
 			
+			
+			</div>
+			<hr>
+
+			<div class="earning-amount"><h6>Earnings Amount</h6><h4 class="kirti"style="color: rgba(0, 0, 0, 0.4); margin: 0 "></h4>
+				
+			</div>
+
 		</div>
-		<div class="bubble right-bubble"> </div>
 
-	</div>
-
-</section>
+	</section>
