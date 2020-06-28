@@ -13,8 +13,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>*|MC:SUBJECT|*</title>
-        <script src="js/jquery.min.js"></script>
+        <title><%= @subject %></title>
         
     <style type="text/css">
 		p{
@@ -175,15 +174,6 @@
 			/*@editable*/line-height:125%;
 			/*@editable*/letter-spacing:normal;
 			/*@editable*/text-align:left;
-		}
-
-		#copybutton {
-			
-    border-radius: 20px;
-    border: none;
-    color: gray;
-    padding: 10px;
-
 		}
 	/*
 	@tab Page
@@ -558,7 +548,7 @@
 }</style></head>
     <body>
         <!--*|IF:MC_PREVIEW_TEXT|*-->
-        <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
+        <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"></span><!--<![endif]-->
         <!--*|END:IF|*-->
         <center>
             <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
@@ -589,7 +579,7 @@
                     
                         
 
-                        <img alt="" src="https://mcusercontent.com/07ec21fc5298bd99c085d297f/images/aadf9178-d6bc-461c-bedc-70221351c051.png" width="201" style="max-width: 201px; border: 1px none; border-radius: 0%;" class="mcnImage">
+                        <img alt="" src="https://mcusercontent.com/07ec21fc5298bd99c085d297f/images/14018f06-8c0b-4826-bf61-9b8233651607.png" width="264" style="max-width: 500px; border: 1px none; border-radius: 0%;" class="mcnImage">
                         
 
                     
@@ -620,7 +610,7 @@
     <tbody class="mcnTextBlockOuter">
         <tr>
             <td valign="top" class="mcnTextBlockInner">
-                <div style="height:2px;background:#4dabed;"></div>
+                <div style="height:2px;background:grey;"></div>
             </td>
         </tr>
     </tbody>
@@ -664,7 +654,7 @@
                         
                             <div style="text-align: center;">Hi!</div>
 
-<div style="text-align: center;">Here's the confirmation code for your roots app.</div>
+<div style="text-align: center;">Here's the confirmation code for your Ramayana&nbsp;app.</div>
 
                         </td>
                     </tr>
@@ -696,11 +686,8 @@
                     <tbody><tr>
                         
                         <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #21415F;font-size: 24px;font-style: normal;font-weight: bold;text-align: center;">
-                         <div id="a" >
-                            671153
-                            </div>
-                            <button id="copybutton"onclick="copyDivToClipboard()">click to copy</button>
-                            
+                        
+                             <%= @activation_code %>
                         </td>
                     </tr>
                 </tbody></table>
@@ -783,7 +770,7 @@
                                                                         <tbody><tr>
                                                                             
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                    <a href="http://www.twitter.com/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" alt="Twitter" style="display:block;" height="24" width="24" class=""></a>
+                                                                                    <a href="https://instagram.com/rootsoframayana" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-instagram-48.png" alt="Instagram" style="display:block;" height="24" width="24" class=""></a>
                                                                                 </td>
                                                                             
                                                                             
@@ -815,7 +802,7 @@
                                                                         <tbody><tr>
                                                                             
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                    <a href="http://www.facebook.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" alt="Facebook" style="display:block;" height="24" width="24" class=""></a>
+                                                                                    <a href="https://www.facebook.com/rootsoframayana/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" alt="Facebook" style="display:block;" height="24" width="24" class=""></a>
                                                                                 </td>
                                                                             
                                                                             
@@ -847,7 +834,7 @@
                                                                         <tbody><tr>
                                                                             
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                    <a href="http://mailchimp.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" alt="Website" style="display:block;" height="24" width="24" class=""></a>
+                                                                                    <a href="https://theramayana.com/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" alt="Website" style="display:block;" height="24" width="24" class=""></a>
                                                                                 </td>
                                                                             
                                                                             
@@ -916,11 +903,10 @@
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            <em>Copyright © 2020 ROOTS travel app, All rights reserved.</em><br>
+                            <em>Copyright © 2020 Singularity Location Solutions Pvt Ltd, All rights reserved.</em><br>
 <br>
 <br>
-<strong>Our mailing address is:</strong><br>
-rails@gmail.com
+&nbsp;
                         </td>
                     </tr>
                 </tbody></table>
@@ -948,18 +934,5 @@ rails@gmail.com
                 </tr>
             </table>
         </center>
-
-         <script type="text/javascript">
-		
-		function copyDivToClipboard() {
-                    var range = document.createRange();
-                    range.selectNode(document.getElementById("a"));
-                    window.getSelection().removeAllRanges(); // clear current selection
-                    window.getSelection().addRange(range); // to select text
-                    document.execCommand("copy");
-                    window.getSelection().removeAllRanges();// to deselect
-                }
-	</script>
-
     </body>
 </html>
